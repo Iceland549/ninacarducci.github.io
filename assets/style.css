@@ -45,9 +45,9 @@ footer {
 	top:0;
 	z-index: 1000;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding-inline: 100px;
-	padding-block: 30px;
+	padding-block: 50px;
 	align-items: center;
 }
 .name-footer {
@@ -57,13 +57,14 @@ footer {
 
 .nav-footer ul {
 	display: flex;
+	justify-content: space-between;
 	list-style-type: none;
 	font-size: 14px;
 	margin-bottom: 0;
 }
 
 .nav-footer li {
-	padding-inline: 10px;
+	padding-inline: 20px;
 }
 
 .nav-footer a {
@@ -393,5 +394,23 @@ input[type="submit"] {
 	.picture {
 		width: 80%;
 	}
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .footer .nav-footer ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer .nav-footer ul li {
+        margin-bottom: 10px;
+    }
+    .social-link-footer img {
+        width: 20px;
+        height: 20px;
+    }
 }
 
